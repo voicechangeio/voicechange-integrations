@@ -1,0 +1,22 @@
+{
+  "name": "voicechange-streamdeck",
+  "version": "1.0.0",
+  "description": "Stream Deck plugin for the VoiceChange desktop app",
+  "scripts": {
+    "build": "esbuild src/plugin.js --bundle --platform=node --format=esm --target=node24 --outfile=io.voicechange.streamdeck.sdPlugin/bin/plugin.js",
+    "validate": "streamdeck validate io.voicechange.streamdeck.sdPlugin",
+    "pack": "npm run build && streamdeck pack io.voicechange.streamdeck.sdPlugin --force",
+    "link": "npm run build && streamdeck link io.voicechange.streamdeck.sdPlugin"
+  },
+  "author": "VoiceChange (https://voicechange.io)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@elgato/streamdeck": "^3.0.6"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.10.5",
+    "esbuild": "^0.28.2"
+  },
+  "homepage": "https://voicechange.io/developers"
+}

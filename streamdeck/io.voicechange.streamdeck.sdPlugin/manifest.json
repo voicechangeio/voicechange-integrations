@@ -1,0 +1,146 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "io.voicechange.streamdeck",
+  "Name": "VoiceChange",
+  "Version": "1.0.0.0",
+  "Author": "VoiceChange",
+  "Description": "Switch voices, turn your voice on and off, play soundboard sounds and record with the VoiceChange desktop app.",
+  "URL": "https://voicechange.io/download",
+  "Icon": "imgs/plugin",
+  "Category": "VoiceChange",
+  "CategoryIcon": "imgs/category",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "disabled"
+  },
+  "Actions": [
+    {
+      "UUID": "io.voicechange.streamdeck.voice",
+      "Name": "Set voice",
+      "Tooltip": "Switch to a voice. Lights up while it's the active voice.",
+      "Icon": "imgs/voice",
+      "PropertyInspectorPath": "ui/voice.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/voice-off",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/voice-on",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "UUID": "io.voicechange.streamdeck.power",
+      "Name": "Voice on/off",
+      "Tooltip": "Turn the voice on or off.",
+      "Icon": "imgs/power",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/power-off",
+          "Title": "Off",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/power-on",
+          "Title": "On",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "UUID": "io.voicechange.streamdeck.mixer",
+      "Name": "Voice Mixer on/off",
+      "Tooltip": "Switch the Voice Mixer layer on or off, keeping its settings.",
+      "Icon": "imgs/mixer",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/mixer-off",
+          "Title": "Mixer",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/mixer-on",
+          "Title": "Mixer",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "UUID": "io.voicechange.streamdeck.sound",
+      "Name": "Play sound",
+      "Tooltip": "Play a soundboard sound (into your call while the voice is on).",
+      "Icon": "imgs/sound",
+      "PropertyInspectorPath": "ui/sound.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/sound-off",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/sound-on",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    },
+    {
+      "UUID": "io.voicechange.streamdeck.record",
+      "Name": "Record",
+      "Tooltip": "Start or stop recording what the voice sends out.",
+      "Icon": "imgs/record",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/record-off",
+          "Title": "Record",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        },
+        {
+          "Image": "imgs/record-on",
+          "Title": "Stop",
+          "TitleAlignment": "bottom",
+          "FontSize": 12
+        }
+      ]
+    }
+  ]
+}

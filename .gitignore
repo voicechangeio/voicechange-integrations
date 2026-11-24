@@ -1,0 +1,6 @@
+node_modules/
+*.streamDeckPlugin
+streamdeck/io.voicechange.streamdeck.sdPlugin/bin/
+streamdeck/io.voicechange.streamdeck.sdPlugin/logs/
+.DS_Store
+__pycache__/
