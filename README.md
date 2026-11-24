@@ -22,7 +22,7 @@ internet, and there's no account or key to paste: the tools find the app by them
 ### Claude Code, Claude Desktop, Cursor
 
 ```bash
-git clone https://github.com/OWNER/voicechange-integrations
+git clone https://github.com/voicechangeio/voicechange-integrations
 cd voicechange-integrations/mcp && npm install
 claude mcp add voicechange -- node "$PWD/index.js"
 ```

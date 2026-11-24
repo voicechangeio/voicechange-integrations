@@ -33,5 +33,13 @@
     "voicechange",
     "claude",
     "ai-voice"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voicechangeio/voicechange-integrations.git",
+    "directory": "mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/voicechangeio/voicechange-integrations/issues"
+  }
 }

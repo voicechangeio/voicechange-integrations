@@ -18,5 +18,13 @@
     "@elgato/cli": "^1.10.5",
     "esbuild": "^0.28.2"
   },
-  "homepage": "https://voicechange.io/developers"
+  "homepage": "https://voicechange.io/developers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voicechangeio/voicechange-integrations.git",
+    "directory": "streamdeck"
+  },
+  "bugs": {
+    "url": "https://github.com/voicechangeio/voicechange-integrations/issues"
+  }
 }
